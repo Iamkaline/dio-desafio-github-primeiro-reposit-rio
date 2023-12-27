@@ -1,0 +1,192 @@
+Link para Download do Git: https://git-scm.com/downloads
+
+O Git Bash é um terminal extendido para otimizar o uso do Git.
+
+INTRODUÇÃO AO GIT
+
+ENTENDENDO O QUE É GIT E SUA IMPORTÂNCIA 
+
+O que é o Git?
+Ele é um sistema de controle de código distribuído, criado por Linux Torvalds. É um software de solucionamento de código que ajuda e criar e monitorar dentro da nossa máquina. 
+
+- Controle de versão 
+- Armazenamento em nuvem 
+- Trabalho em equipe
+- Melhorar seu código 
+- Reconhecimento
+
+NAVEGAÇÃO VIA COMMAND LINE INTERFACE E IONSTALAÇÃO
+
+COMANDOS BÁSICOS PARA UM BOM DESEMPENHO NO TERMINAL
+
+GIU X CLI
+
+A forma de interagir do Git é por Linha de comando
+
+O QUE APRENDEMOS
+- Mudar de pastas
+- Listar as pastas
+- Criar pastas/arquivos
+- Deletar pastas/arquivos
+
+TERMINALS
+- Windows (cd, dir, mkdir, del, rmdir)
+- Unix (cd, ls, mkdir, rm, rf)
+
+DIR e LS = Para achar pastas
+CD = Navegar pelas pastas 
+".." Dois pontos para retroceder
+CLS = para limpar o terminal (windows)
+Clear ou Ctrl+L = para limpar o terminal (unix)
+TAB = Para auto completar
+MKDIR = para criar pastas no terminal Windows e Unix
+DEL = delete
+
+PRÁTICA
+
+Workspace>echo hello
+Workspace >echo hello > hello.txt
+Workspace >dir
+Workspace + seta para cima para mavehar entre arquivos
+Rmdir = para remover repositório /S/Q no Windows
+RM -Rf = para remover repositório no Unix
+
+ENTENDENDO COMO O GIT FUNCIONA POR BAIXO DOS PANOS
+
+TÓPICOS FUNDAMENTAIS PARA ENTENDER O FUNCIONAMENTO DO GIT
+
+- SHA1
+- OBJETOS FUNDAMENTAIS
+- SISTEMA DISTRIBUÍDO
+- SEGURANÇA
+
+SHA1
+A sigla SHA significa Secure Hash Algorithm (algoritmo de hasg seguro), é um conjunto de funções hasg criptográficas projetadas pela NSA (Agência nacional dos EUA).
+
+A Encriptação gera conjunto de characteres identificador de 40 digitos. E é único.
+
+o SHA1 é uma forma curta de representar um arquivo.
+
+echo "ola mundo" / OpenSSL sha1
+openssl sha1 + arquivo
+
+Qualquer alteração feita muda a chave de código. O que o torna seguro.
+
+OBJETOS INTERNOS DO GIT 
+- BLOBS
+- TREES
+- COMMITS
+
+BLOBS
+echo ‘conteudo’ | git hash-object- 
+
+Estrutura Blobs 
+Tipo ; Tamanho / \0 Olá mundo. 
+
+Importante: 
+O Git armazena metadados dentro dele. 
+O sha1 é uma criptografia que gera chaves de 40 diferentes. 
+
+THEE
+Armazena blocos. Bloco básico de composição. 
+
+Estrutura Tree
+Blob ; nome do arquivo ; \0 ; sha1 
+
+
+
+COMMINT
+
+O que junta tudo. 
+
+
+Leva o tempo que foi feito, o autor que fez o commint, pode haver mensagem explicando todo o bloco, leva o thee. O commit aponta para uma árvore que pode levar a outra árvore. 
+
+
+Sistema distribuído seguro
+
+	✓	CHAVE SSH E TOKEN 
+
+Chave SSH = É uma forma de estabelecer uma conexão segura e encriptada entre duas máquinas. 
+
+Sempre tem 2 chaves. 1 pública e 1 privada. 
+
+Gerando a chave = comandos 
+ssh-keygen -t ed25879 -c email
+
+
+Tokens de acesso pessoal.
+
+PRIMEIROS COMANDOS COM GIT
+
+	✓	INICIANDO O GIT E CRIANDO UM COMMINT 
+
+	⁃	Iniciar o Git 
+	⁃	Iniciar o versionamento
+	⁃	Criar um commit.
+
+INICIAR O GIT 
+
+	⁃	Git init (iniciar o repositório)
+	⁃	Git add (mover arquivos) ao versionamento. 
+	⁃	Git commit
+
+Todo comando do git leva o nome git na frente e o comando específico logo após.
+
+	•	CRIANDO UM REPOSITÓRIO 
+ 
+ADICIONANDO UM ARQUIVO 
+
+	⁃	Markdown (uma forma mais humana de escrever o HTML).
+	⁃	Navegador 
+	⁃	HTML (é a estrutura básica de qualquer página da web).
+
+
+CICLO DE VIDA DOS ARQUIVOS NO GIT 
+
+	◦	PASSO A PASSO NO CICLO DE VIDA
+
+GIT INIT 
+Esse comando inicializa e cria um repositório. 
+
+￼
+
+Dentro da Tracked 
+
+Unmodified = arquivo não modificado 
+Modified = arquivo modificado 
+Stage = arquivo que está se preparando para fazer parte de outro tipo de agrupamento. 
+
+Untracked 
+Adiciona o arquivo 
+
+Unmodified 
+Edita o arquivo
+
+Modified 
+“Stage” o arquivo 
+
+Stage 
+Commit (esperando para se tornar um commit).
+
+Commit 
+Torna os arquivos de volta para unmodified. 
+
+REPOSITÓRIO 
+
+SERVIDOR 
+Remote repository = GitHub 
+
+AMBIENTE DE DESENVOLVIMENTO 
+Working directory 
+Staging area = commit entra em cena.
+Local repository = tudo em commit. 
+
+
+> git add nome arquivo
+> git add *
+> git add .
+
+> git commit -m “msg”
+
+TRABALHANDO COM O GITHUB NA PRÁTICA 
