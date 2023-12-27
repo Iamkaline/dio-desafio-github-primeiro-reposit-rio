@@ -190,3 +190,23 @@ Local repository = tudo em commit.
 > git commit -m “msg”
 
 TRABALHANDO COM O GITHUB NA PRÁTICA 
+
+cd livro-receitas/
+ls
+git remote add origin https:arquivo
+git remote -v
+git status
+git push origin master
+
+RESOLVENDO CONFLITOS
+
+git status
+git commit -m "README.md"
+git push origin master 
+git commit -m "README.md"
+git push origin master
+
+ls 
+cd copython/
+ls -a
+git remote -v
